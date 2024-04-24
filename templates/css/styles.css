@@ -165,3 +165,42 @@ footer {
         padding: 20px; /* Larger padding for larger screens */
     }
 }
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+    .header-logo {
+        height: 2em; /* Smaller logo height for mobile */
+    }
+
+    .contact-us-btn {
+        padding: 5px 10px; /* Smaller padding for mobile */
+        font-size: 0.8em; /* Smaller font size */
+    }
+
+    .step {
+        flex-direction: column; /* Change layout to vertical for mobile */
+        padding: 10px; /* Smaller padding */
+        margin: 1em; /* Smaller margin */
+    }
+
+    .step-number {
+        font-size: 1em; /* Smaller font size for step numbers */
+        text-align: left; /* Align text to the left */
+    }
+
+    .step-icon {
+        width: 80px; /* Smaller size for mobile */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Space between icon and text */
+    }
+
+    .step-text {
+        font-size: 1.2em; /* Smaller font size for text */
+        max-width: 100%; /* Allow text to fill available space */
+    }
+
+    footer {
+        padding: 10px; /* Smaller padding for mobile */
+        font-size: 0.8em; /* Smaller font size for footer */
+    }
+}
