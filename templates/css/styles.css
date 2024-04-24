@@ -1,0 +1,167 @@
+/* Base colors and typography */
+:root {
+    --primary-color: #F36C3D; /* Orange */
+    --secondary-color: #333; /* Dark gray for text */
+    --background-color: #f5f5f5; /* Light gray background */
+}
+
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+.header-logo {
+    height: 2.5em; /* Set the height */
+    width: auto; /* Width adjusts based on aspect ratio */
+}
+
+/* Header styling */
+.header-container {
+    background-color: #333;
+    padding: 10px; /* Padding for spacing */
+    text-align: center; /* Center text */
+    color: rgb(34, 34, 34); /* Text color for contrast */
+    position: relative; /* Allow absolute positioning within the header */
+}
+
+/* Style for Contact Us button */
+.contact-us-btn {
+    background-color: var(--primary-color); /* Orange background */
+    color: white; /* White text for contrast */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for comfort */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Standard font size */
+    position: absolute; /* Absolute position for precise placement */
+    top: 10px; /* Align with header padding */
+    right: 20px; /* Position button at the right */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Animation for hover effect */
+.contact-us-btn:hover {
+    background-color: #e25d32; /* Darker orange on hover */
+}
+
+/* Keyframe animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+    }
+}
+
+/* Styling for main content */
+main {
+    position: relative; /* Relative positioning */
+    background-image: url('../images/restaurant-interior.jpg'); /* Background image path */
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Centered image */
+    padding: 10px; /* Padding for spacing */
+    min-height: 600px; /* Ensure enough height */
+}
+
+/* Step-by-step styling with animation */
+.step {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertical alignment */
+    justify-content: space-between; /* Even spacing */
+    padding: 15px; /* Reduced padding */
+    opacity: 0; /* Hidden initially */
+    transform: translateY(20px); /* Offset for animation */
+    transition: all 0.5s; /* Smooth transition for animations */
+    margin: 1.5em; /* Margin around the card */
+    background: rgba(79, 79, 79, 0.6); /* Semi-transparent background */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Subtle shadow */
+    backdrop-filter: blur(10.5px); /* Blurred background */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+.step-number {
+    flex: 1; /* Flex grows proportionally */
+    text-align: center; /* Align text to the left */
+    font-size: 1.5em; /* Large font size for number */
+    color: var(--primary-color); /* Primary color */
+}
+h1{
+    font-size: 5em;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.step-text {
+    flex: 3; /* More space for text */
+    text-align: center; /* Align text to the left */
+    font-size: 2em; /* Normal font size for text */
+    padding: 0%;
+    max-width: 70%;
+}
+
+.step-icon {
+    width: 150px; /* Fixed width for the icon */
+    height: auto; /* Fixed height for the icon */
+}
+
+
+/* Apply visible class for animation */
+.step.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Normal position */
+}
+
+/* Hover effect for steps */
+.step:hover {
+    transform: translateY(-5px); /* Lift on hover */
+}
+
+/* Heading styles for steps */
+.step h2 {
+    color: var(--primary-color); /* Use primary color for emphasis */
+    font-size: 1.5em; /* Slightly larger heading */
+}
+/* Footer styling */
+footer {
+    background-color: var(--secondary-color); /* Darker background */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding for spacing */
+}
+
+/* Responsive design for larger screens */
+@media (min-width: 768px) {
+    .header-logo {
+        height: 3em; /* Adjust height for larger screens */
+    }
+
+    .contact-us-btn {
+        padding: 10px 20px; /* Increase padding for larger screens */
+        font-size: 1em; /* Increase font size */
+    }
+
+    .step {
+        padding: 15px; /* Larger padding for larger screens */
+        margin: 1.5em; /* Larger margin */
+    }
+
+    .step-number {
+        font-size: 1.5em; /* Larger font size for step numbers */
+    }
+
+    .step-icon {
+        width: 150px; /* Increase size for larger screens */
+    }
+
+    .step-text {
+        font-size: 2em; /* Larger font size */
+        max-width: 70%; /* Increase width for larger screens */
+    }
+
+    footer {
+        padding: 20px; /* Larger padding for larger screens */
+    }
+}
