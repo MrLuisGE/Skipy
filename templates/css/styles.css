@@ -74,7 +74,7 @@ main {
     transform: translateY(20px); /* Offset for animation */
     transition: all 0.5s; /* Smooth transition for animations */
     margin: 1.5em; /* Margin around the card */
-    background: rgba(79, 79, 79, 0.6); /* Semi-transparent background */
+    background: white; /* Semi-transparent background */
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Subtle shadow */
     border-radius: 10px; /* Rounded corners */
     border: 1px solid rgba(255, 255, 255, 0.18);
