@@ -85,7 +85,7 @@ main {
     flex: 1; /* Flex grows proportionally */
     text-align: center; /* Align text to the left */
     font-size: 1.5em; /* Large font size for number */
-    color: var(--primary-color); /* Primary color */
+    color: #f4866b; /* Primary color */
 }
 h1{
     font-size: 5em;
@@ -94,11 +94,12 @@ h1{
 }
 
 .step-text {
-    flex: 3; /* More space for text */
+    flex: 4; /* More space for text */
     text-align: center; /* Align text to the left */
     font-size: 2em; /* Normal font size for text */
     padding: 0%;
     max-width: 70%;
+    font-weight: 800;
 }
 
 .step-icon {
@@ -120,8 +121,9 @@ h1{
 
 /* Heading styles for steps */
 .step h2 {
-    color: var(--primary-color); /* Use primary color for emphasis */
+    color: #f4866b; /* Use primary color for emphasis */
     font-size: 1.5em; /* Slightly larger heading */
+    font-weight: 1800;
 }
 /* Footer styling */
 footer {
