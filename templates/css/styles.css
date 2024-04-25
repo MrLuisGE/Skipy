@@ -76,7 +76,6 @@ main {
     margin: 1.5em; /* Margin around the card */
     background: rgba(79, 79, 79, 0.6); /* Semi-transparent background */
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Subtle shadow */
-    backdrop-filter: blur(10.5px); /* Blurred background */
     border-radius: 10px; /* Rounded corners */
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
