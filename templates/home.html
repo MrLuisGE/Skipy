@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Skipy</title>
-    <link rel="stylesheet" href="templates/css/styles.css"> <!-- Link to the external CSS file -->
-    <script src="templates/js/script.js"></script> <!-- Link to the external JavaScript file -->
-    <link rel="icon" type="image/x-icon" href="templates/images/Logo favicon Skipy.ico">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> <!-- Link to the external CSS file -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script> <!-- Link to the external JavaScript file -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/Logo favicon Skipy.ico') }}">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -13,7 +13,7 @@
     <header class="header-container">
         <div class="header-content">
             <!-- Image Icon -->
-            <img src="templates/images/Logo Skippy completa.svg" alt="Header Image" class="header-logo" />
+            <img src="{{ url_for('static', filename='images/Logo Skippy completa.svg') }}" alt="Header Image" class="header-logo" />
             
             <!-- Contact Us Button -->
             <button class="contact-us-btn" onclick="window.location.href='mailto:info@skipy.io'">Contact Us</button>
@@ -23,16 +23,16 @@
 
     <!-- Main Content with Steps -->
     <main>
-        <section id="order-steps" >
+        <section id="order-steps">
             <div class="step" id="step1">
                 <!-- Large Number -->
                 <div class="step-number">
                     <h1>01</h1>
                 </div>
-                 <!-- PNG Image -->
-    <div class="step-image">
-        <img src="templates/images/skipyqrcode.png" alt="Step Image" class="step-icon" />
-    </div>
+                <!-- PNG Image -->
+                <div class="step-image">
+                    <img src="{{ url_for('static', filename='images/skipyqrcode.png') }}" alt="Step Image" class="step-icon" />
+                </div>
                 <!-- Text Content -->
                 <div class="step-text">
                     <h2>Scan the QR Code</h2>
@@ -45,10 +45,10 @@
                 <div class="step-number">
                     <h1>02</h1>
                 </div>
-                 <!-- PNG Image -->
-    <div class="step-image">
-        <img src="templates/images/pay-per-click.png" alt="Step Image" class="step-icon" />
-    </div>
+                <!-- PNG Image -->
+                <div class="step-image">
+                    <img src="{{ url_for('static', filename='images/pay-per-click.png') }}" alt="Step Image" class="step-icon" />
+                </div>
                 <!-- Text Content -->
                 <div class="step-text">
                     <h2>Make your choice and pay online</h2>
@@ -60,10 +60,10 @@
                 <div class="step-number">
                     <h1>03</h1>
                 </div>
-                 <!-- PNG Image -->
-    <div class="step-image">
-        <img src="templates/images/sms.png" alt="Step Image" class="step-icon" />
-    </div>
+                <!-- PNG Image -->
+                <div class="step-image">
+                    <img src="{{ url_for('static', filename='images/sms.png') }}" alt="Step Image" class="step-icon" />
+                </div>
                 <!-- Text Content -->
                 <div class="step-text">
                     <h2>Receive a message when it is ready</h2>
@@ -76,10 +76,10 @@
                 <div class="step-number">
                     <h1>04</h1>
                 </div>
-                 <!-- PNG Image -->
-    <div class="step-image">
-        <img src="templates/images/package.png" alt="Step Image" class="step-icon" />
-    </div>
+                <!-- PNG Image -->
+                <div class="step-image">
+                    <img src="{{ url_for('static', filename='images/package.png') }}" alt="Step Image" class="step-icon" />
+                </div>
                 <!-- Text Content -->
                 <div class="step-text">
                     <h2>Collect your order and enjoy it!</h2>
